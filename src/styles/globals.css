@@ -5,6 +5,12 @@
 @tailwind utilities;
 
 
+html{
+  scroll-behavior: smooth;
+}
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -31,8 +37,11 @@
 }
 
 .container{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%
 }
 
 .icon{
@@ -79,4 +88,22 @@ input{
 
 body {
   background: var(--whiteColorDeam);
+}
+
+
+@media screen and (min-width: 1240px) {
+  .container {
+    width: 80% !important;
+    margin: auto !important;
+  }
+
+  .section{
+    padding: 6rem 0 4rem;
+  }
+}
+
+@media screen and (min-width: 2560px){
+  body {
+    zoom: 1.7;
+  }
 }
